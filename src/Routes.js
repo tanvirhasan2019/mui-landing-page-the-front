@@ -20,7 +20,7 @@ const Routes = () => {
       {demosRoutes.map((item, i) => (
         <Route key={i} path={item.path} element={item.renderer()} />
       ))}
-      <Route path="*" element={<Navigate replace to="/" />} />
+      {/* <Route path="*" element={<Navigate replace to="/" />} /> */}
     </ReactRoutes>
   );
 };
